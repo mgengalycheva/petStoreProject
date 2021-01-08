@@ -14,5 +14,6 @@ public class ApiTests {
     @Test
     public void checkPetMethods() {
         apiSteps.postGetPetById();
+        apiSteps.postPutPetById();
     }
 }

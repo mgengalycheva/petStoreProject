@@ -39,6 +39,8 @@ dependencies {
     compile "net.serenity-bdd:serenity-core:${serenityCoreVersion}"
     compile "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}"
     compile "com.jayway.jsonpath:json-path:${jaywayVersion}"
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.4.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.4.1'
 
     testCompile "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
             "net.serenity-bdd:serenity-junit:${serenityCoreVersion}",
@@ -48,6 +50,7 @@ dependencies {
             "org.assertj:assertj-core:${assertJVersion}"
 
 }
+
 
 test {
     testLogging.showStandardStreams = true
